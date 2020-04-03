@@ -1,0 +1,18 @@
+{
+    "app": {
+        "title": "s'auto évaluer?",
+        "footer": {
+            "support": "Merci pour votre soutien!",
+            "contact": "Contactez-nous sur l'une de ces plateformes.",
+            "whatsappshare": "Signalez votre état de santé pour nous aider à lutter contre le Covid-19 !"
+        },
+        "yes": "Oui",
+        "no": "Non",
+        "language": "Français"
+    },
+    "home": {
+        "title": "Covid self report",
+        "subtitle": "The Open Source project that can help your countries",
+        "countryListTitle": "List of the country teams that have joined the project"
+    }
+}
