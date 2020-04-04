@@ -11,12 +11,17 @@
         <div class="container shape-container d-flex">
           <div class="col text-white">
             <h1 class="display-3 text-white">{{ $t('news.title') }}</h1>
+              <twitter>
+                  <div slot="loading">loading .....</div>
+                  <a class="twitter-timeline" href="https://twitter.com/CovidMeReporto?ref_src=twsrc%5Etfw">Tweets by CovidMeReporto</a>
+              </twitter>
           </div>
         </div>
       </section>
     </div>
 
   </div>
+
 </template>
 
 <script>
@@ -32,6 +37,7 @@ export default {
   },
 
 };
+
 
 </script>
 

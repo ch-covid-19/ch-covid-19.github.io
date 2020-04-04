@@ -27,6 +27,7 @@
     "vue-lazyload": "^1.2.6",
     "vue-recaptcha-v3": "^1.8.0",
     "vue-router": "^3.0.2",
+    "vue-twitter": "^0.1.0",
     "vue2-leaflet": "^2.5.2",
     "vue2-transitions": "^0.2.3"
   },

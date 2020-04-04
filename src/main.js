@@ -18,10 +18,11 @@
 import Vue from "vue";
 import App from "./App.vue";
 import router from "./router";
-
+import twitter from 'vue-twitter'
 import './registerServiceWorker'
 
 Vue.config.productionTip = false;
+Vue.use(twitter);
 
 Vue.prototype.socialLinkGithub = process.env.VUE_APP_SOCIAL_GITHUB;
 
