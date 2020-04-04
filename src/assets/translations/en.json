@@ -4,15 +4,12 @@
         "countries": {
             "ch": "Switzerland",
             "in": "India",
-            "me": "Mexico"
+            "mx": "Mexico"
         },
         "footer": {
             "support": "Thank you for supporting us!",
             "contact": "Let's get in touch on any of these platforms.",
-            "whatsappshare": "Report your health status to help fighting against the Covid-19!",
-            "ch": "Switzerland",
-            "in": "India",
-            "me": "Mexico"
+            "whatsappshare": "Report your health status to help fighting against the Covid-19!"
         },
         "yes": "Yes",
         "no": "No",
@@ -20,8 +17,8 @@
     },
     "home": {
         "title": "Covid self report",
-        "subtitle": "The Open Source project that can help your countries",
-        "countryListTitle": "List of the country teams that have joined the project"
+        "subtitle": "The Open Source project that can help your country",
+        "countryListTitle": "List of the teams that have joined the project"
     },
     "news": {
         "title": "News"
