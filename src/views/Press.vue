@@ -11,7 +11,7 @@
             <h1 class="display-3 text-white">{{ $t('press.title') }}</h1>
             <h3 class="text-white">{{ $t(`press.subtitle`) }}</h3>
             <ul>
-              <li v-for="item in articles">
+              <li v-for="item in articles" v-bind:key="item">
                 <badge type="primary">{{item.country}}</badge>
                 <span class="date">{{item.date.getDate()}}/{{item.date.getMonth()}}/{{item.date.getFullYear()}}</span>
                 <span class="document">{{item.title}}</span>
@@ -22,7 +22,7 @@
             </ul>
             <h3 class="text-white">{{ $t(`press.pressRelease`) }}</h3>
             <ul>
-              <li v-for="item in releases">
+              <li v-for="item in releases" v-bind:key="item">
                 <badge type="primary">{{item.country}}</badge>
                 <span class="date">{{item.date.getDate()}}/{{item.date.getMonth()}}/{{item.date.getFullYear()}}</span>
                 <span class="document">{{item.title}}</span>
