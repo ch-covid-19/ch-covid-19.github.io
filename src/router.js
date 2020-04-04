@@ -7,7 +7,6 @@ import About from "./views/About";
 import Press from "./views/Press";
 import Home from "./views/Home";
 import News from "./views/News";
-import Partnerships from "./views/Partnerships";
 
 Vue.use(Router);
 
@@ -39,15 +38,6 @@ export default new Router({
       components: {
         header: AppHeader,
         default: News,
-        footer: AppFooter
-      }
-    },
-    {
-      path: "/partnerships",
-      name: "partnerships",
-      components: {
-        header: AppHeader,
-        default: Partnerships,
         footer: AppFooter
       }
     },

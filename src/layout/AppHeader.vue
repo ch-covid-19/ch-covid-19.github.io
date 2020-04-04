@@ -30,12 +30,6 @@
         </li>
 
         <li class="nav-item">
-          <router-link class="nav-link" to="/partnerships">
-            {{ $t('partnerships.title') }}
-          </router-link>
-        </li>
-
-        <li class="nav-item">
           <router-link class="nav-link" to="/about">
             {{ $t('about.title') }}
           </router-link>
