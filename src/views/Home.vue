@@ -16,7 +16,7 @@
             <base-alert type="warning" id="alert">
              <strong>We are looking for new teams!</strong>
              Feel free to joins us by creating your own team or join one our team.
-             Just follow this link: <a :href="welcomeLink">Welcome</a>.
+             Just follow this <a :href="welcomeLink">link</a>.
             </base-alert>
             <vue-world-map id="worldMap"
                     v-bind:countryData="countryData"
