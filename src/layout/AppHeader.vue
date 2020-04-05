@@ -1,6 +1,6 @@
 <template>
   <header class="header-global">
-    <base-nav class="navbar-main" transparent type="" effect="light" expand>
+    <base-nav class="navbar-main" ref="basenav" transparent type="" effect="light" expand>
       <router-link slot="brand" class="navbar-brand mr-lg-5" to="/">
         <img src="img/brand/logo_alpha.png" alt="logo"> covid-self-report
       </router-link>
@@ -16,6 +16,12 @@
 
 
       <ul class="navbar-nav navbar-nav-hover align-items-lg-center">
+
+        <li class="nav-item">
+          <router-link class="nav-link" to="/">
+            {{ $t('home.title') }}
+          </router-link>
+        </li>
 
         <li class="nav-item">
           <router-link class="nav-link" to="/news">
@@ -75,6 +81,12 @@
       setLocale: function (locale) {
         this.$i18n.locale = locale;
         localStorage.setItem('locale', locale);
+        this.$refs.basenav.closeMenu();
+      }
+    },
+    watch: {
+      $route(to, from) {
+        this.$refs.basenav.closeMenu();
       }
     }
   };

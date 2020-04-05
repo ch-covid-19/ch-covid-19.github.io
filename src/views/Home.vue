@@ -11,21 +11,18 @@
         <div class="container shape-container d-flex">
 
           <div class="col text-white">
-            <h1 class="display-3 text-white">{{ $t('home.title') }}</h1>
-            <h3 class="text-white">{{ $t(`home.subtitle`) }}</h3>
+            <h1 class="display-3 text-white">{{ $t('home.header') }}</h1>
+            <h3 class="text-white">{{ $t(`home.subheader`) }}</h3>
             <base-alert type="warning" id="alert">
-             <strong>We are looking for new teams!</strong>
-             Feel free to joins us by creating your own team or join one our team.
-             Just follow this <a :href="welcomeLink">link</a>.
+             <strong>{{ $t(`home.alert.strong`) }}</strong>
+             {{ $t(`home.alert.text`) }}<a :href="welcomeLink">link</a>.
             </base-alert>
             <vue-world-map id="worldMap"
-                    v-bind:countryData="countryData"
+                    v-bind:countryData="countriesMap"
                     v-bind:defaultCountryFillColor="map.defaultCountryFillColor"
                     v-bind:highColor='map.highColor'
                     v-bind:countryStrokeColor='map.countryStrokeColor'
                     v-bind:lowColor="map.lowColor"></vue-world-map>
-
-
           </div>
         </div>
       </section>
@@ -37,9 +34,9 @@
         </div>
         <div class="container shape-container d-flex">
           <div class="col text-white">
-            <h4 class="text-white">{{ $t(`home.countryListTitle`) }}</h4>
+            <h3 class="text-white">{{ $t(`home.countryListTitle`) }}</h3>
             <div id="country-buttons">
-              <base-button type="secondary" v-for="country of countries" :key="country.code">
+              <base-button type="secondary" v-for="country of countries" :key="country.code" class="country-button">
               <img :src="`https://www.countryflags.io/${country.code}/flat/32.png`"
                    :alt="`${country.code} flag`"
                    target="_blank"
@@ -49,7 +46,7 @@
                    </a>
               </base-button>
             </div>
-            <h4 class="text-white">{{ $t(`partnerships.title`) }}</h4>
+            <h3 class="text-white">{{ $t(`partnerships.title`) }}</h3>
             <div id="partnerships">
               <div class="card text-white bg-primary mb-3">
                 <div class="card-body">
@@ -62,6 +59,19 @@
                   </p>
                 </div>
               </div>
+            </div>
+            <h3 class="text-white">{{ $t(`openData.header`) }}</h3>
+            <h4 class="text-white">{{ $t(`openData.subheader`) }}</h4>
+            <div id="country-buttons">
+              <base-button type="secondary" v-for="country of countries" :key="country.code" class="country-button">
+              <img :src="`https://www.countryflags.io/${country.code}/flat/32.png`"
+                   :alt="`${country.code} flag`"
+                   target="_blank"
+                   class="flag ml-1"/>
+                   <a :href="country.datasets" class="country">
+                   {{ $t(`app.countries.${country.code}`) }}
+                   </a>
+              </base-button>
             </div>
           </div>
 
@@ -84,15 +94,8 @@
     },
     data() {
       return {
-
         welcomeLink: process.env.VUE_APP_JOIN_GITHUB,
         countries: countries,
-        countryData: {
-            US: 0, /* need a country at zeor */
-            CH: 1,
-            IN: 1,
-            MX: 1
-          },
         map: {
           defaultCountryFillColor: '#555abf',
           highColor: '#ff000099',
@@ -100,7 +103,16 @@
           countryStrokeColor: 'white'
         },
       }
-    }
+    },
+    computed: {
+        countriesMap() {
+          let toPlot = { 'US': 0 } /* need a country at zero */
+          countries.forEach(c => {
+            toPlot[c.code.toUpperCase()] = 1
+          });
+          return toPlot;
+        }
+    },
   };
 
 </script>
@@ -140,6 +152,9 @@
 
 #country-buttons{
   margin: 2em;
+}
+.country-button{
+  margin: 0.2em;
 }
 #partnerships{
   margin: 2em;

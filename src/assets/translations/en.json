@@ -4,7 +4,8 @@
         "countries": {
             "ch": "Switzerland",
             "in": "India",
-            "mx": "Mexico"
+            "mx": "Mexico",
+            "it": "Italy"
         },
         "footer": {
             "support": "Thank you for supporting us!",
@@ -16,36 +17,49 @@
         "language": "English"
     },
     "home": {
-        "title": "Covid self report",
-        "subtitle": "The Open Source project that can help your country",
-        "countryListTitle": "List of the teams that have joined the project"
+        "title": "Home",
+        "header": "Covid self report",
+        "subheader": "The Open Source project that can help your country",
+        "countryListTitle": "List of the teams that have already joined the project",
+        "alert": {
+          "strong": "We are looking for new teams!",
+          "text": "Feel free to joins us by creating your own team or join one our team. Just follow this "
+        }
     },
     "news": {
         "title": "News"
     },
     "press": {
         "title": "Press",
-        "subtitle": "Articles related to the project",
-        "pressRelease": "Press release"
+        "articles": {
+          "header": "Articles"
+        },
+        "releases": {
+          "header": "Press releases"
+        }
     },
     "partnerships": {
         "title": "Partnerships"
     },
+    "openData": {
+        "header": "Open datasets",
+        "subheader": "Our collected data are open to everyone"
+    },
     "about": {
-        "title": "About us",
+        "title": "About",
         "headWho": "We are a team of developers",
-        "who": "that want to help to evaluate the current situation of the COVID-19 pandemic in our country.",
-        "headNeedYou": "We need you!",
-        "needYou": "Our app is based on your self-reporting... so it is important that you update your health status in case of change.",
+        "who": "We want to help to evaluate the current situation of the COVID-19 pandemic in every country that need it. This project is developed by a team of Switzerland developers and they open sourced the code to the world to help other countries. Now, it is maintained by an intenational team to bring this to every countries that need it. The aim is to deliver the community driven data collection to the public. This information provides the current situation of the COVID-19 pandemia.",
+        "headNeedYou": "We need your support!",
+        "needYou": "Our app is based on your self-reporting. That means only if you provide data, this app can show more real data about your area. So it is important that all of you provide your health data and then update your health status if it changed during the course of lockdown.",
         "headData": "We don’t save any personal information in our servers!",
-        "data": "Every data is anonymous but to keep our datasets consistent, we need that you always use the same browser to update your status (otherwise you will be counted twice).",
+        "data": "Every data is anonymous but to keep our datasets consistent, we need that you always use the same browser to update your status (otherwise you will be counted twice). This information is NOT OFFICIAL and is based on direct voluntary reports from the population. We trust that you will honestly report your health status, to generate the most accurate visualization possible.",
         "headDataUpdate": "Realtime, well...not yet!",
-        "dataUpdate": "We will update the numbers as frequently as we can. But, you will need to wait a bit especially during the beginning phase of the app.",
-        "headPublicData": "For other developers,",
-        "publicData": "our dataset is public and open in our github. Please use it to make your own awesome visualization, or join our effort to open up in other countries",
-        "headDataCare": "By the way,",
-        "dataCare": " keep in mind that our dataset is based on self-reporting from the community, thus the data is not official and could contains errors. The data is only intended to be used as an indicator.",
+        "dataUpdate": "Currently, it is not supported. If we get enough support, we will bring this feature to you. We will provide update of the numbers as frequently as we can.",
+        "headPublicData": "Want to use our data or join us?",
+        "publicData": "Our dataset is public and open in our github. Please use it to make your own awesome visualization, or join our effort to open up in other countries",
+        "headDataCare": "Disclaimer!",
+        "dataCare": "Keep in mind that our dataset is based on self-reporting from peoples thus the data are not official and could contains errors. The data is only intended to be used as an indicator.",
         "headImprovement": "If you have any suggestions",
-        "improvement": "for improvements or you want to report an error, please contact us on Facebook."
+        "improvement": "For improvements or if you want to report an error, please contact us on Facebook or Github."
     }
 }

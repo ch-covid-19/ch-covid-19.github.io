@@ -7,30 +7,31 @@
           <span></span>
         </div>
         <div class="container shape-container d-flex">
-          <div class="col text-white">
-            <h1 class="display-3 text-white">{{ $t('press.title') }}</h1>
-            <h3 class="text-white">{{ $t(`press.subtitle`) }}</h3>
-            <ul>
-              <li v-for="item in articles" v-bind:key="item">
-                <badge type="primary">{{item.country}}</badge>
-                <span class="date">{{item.date.getDate()}}/{{item.date.getMonth()}}/{{item.date.getFullYear()}}</span>
-                <span class="document">{{item.title}}</span>
-                <a :href="item.link">
-                  <base-button type="secondary" size="sm" icon="ni ni-cloud-download-95"></base-button>
-                </a>
-              </li>
-            </ul>
-            <h3 class="text-white">{{ $t(`press.pressRelease`) }}</h3>
-            <ul>
-              <li v-for="item in releases" v-bind:key="item">
-                <badge type="primary">{{item.country}}</badge>
-                <span class="date">{{item.date.getDate()}}/{{item.date.getMonth()}}/{{item.date.getFullYear()}}</span>
-                <span class="document">{{item.title}}</span>
-                <a :href="item.link">
-                  <base-button type="secondary" size="sm" icon="ni ni-cloud-download-95"></base-button>
-                </a>
-              </li>
-            </ul>
+          <div class="row">
+            <div class="col">
+              <h3 class="text-white">{{ $t(`press.articles.header`) }}</h3>
+              <ul class="list-group">
+                <li class="list-group-item list-group-item-primary list-group-flush" v-for="item in articlesList">
+                  <badge type="secondary">{{item.country}}</badge>
+                  <span class="date">{{item.date}}</span>
+                  <span class="document">{{item.title}}</span>
+                  <a :href="item.link">
+                    <base-button type="secondary" size="sm" icon="ni ni-cloud-download-95"></base-button>
+                  </a>
+                </li>
+              </ul>
+              <h3 id="releaseHeader" class="text-white">{{ $t(`press.releases.header`) }}</h3>
+              <ul class="list-group">
+                <li class="list-group-item list-group-item-primary" v-for="item in releasesList">
+                  <badge type="secondary">{{item.country}}</badge>
+                  <span class="date">{{item.date}}</span>
+                  <span class="document">{{item.title}}</span>
+                  <a :href="item.link">
+                    <base-button type="secondary" size="sm" icon="ni ni-cloud-download-95"></base-button>
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>
@@ -40,28 +41,16 @@
 </template>
 
 <script>
+const articlesList = require('@/assets/articles.json');
+const releasesList = require('@/assets/releases.json');
 
 export default {
   name: "press",
   components: {},
   data() {
     return {
-      "articles":[
-        {
-          "link": "pdf/press/swiss_24heures.pdf",
-          "title": "Newspaper article (french)",
-          "country": "Switzerland",
-          "date": new Date(2020,4,2)
-        }
-      ],
-      "releases":[
-        {
-          "link": "pdf/press/swiss_press_release_2avril.pdf",
-          "title": "Press release",
-          "country": "Switzerland",
-          "date": new Date(2020,4,2)
-        }
-      ]
+      articlesList: articlesList.reverse(),
+      releasesList: releasesList.reverse(),
     }
   },
 };
@@ -75,6 +64,9 @@ export default {
 }
 .document{
   margin-right: 1em;
+}
+#releaseHeader{
+  margin-top:1em;
 }
 
 </style>

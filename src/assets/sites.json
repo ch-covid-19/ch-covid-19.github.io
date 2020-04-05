@@ -1,14 +1,22 @@
 [
   {
     "code": "ch",
-    "url": "https://covid-self-report.ch"
+    "url": "https://covid-self-report.ch",
+    "datasets": "https://github.com/ch-covid-19/datasets-che"
   },
   {
     "code": "in",
-    "url": "https://covid-self-report.in"
+    "url": "https://covid-self-report.in",
+    "datasets": "https://github.com/ch-covid-19/datasets-ind"
   },
   {
     "code": "mx",
-    "url": "https://covid-me-reporto.mx"
+    "url": "https://covid-me-reporto.mx",
+    "datasets": "https://github.com/ch-covid-19/datasets-mex"
+  },
+  {
+    "code": "it",
+    "url": "https://covid-self-report.it",
+    "datasets": "https://github.com/ch-covid-19/datasets-ita"
   }
 ]

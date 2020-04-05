@@ -10,13 +10,27 @@
         <div class="container shape-container d-flex">
           <div class="col text-white">
             <h1 class="display-3 text-white">{{ $t('about.title') }}</h1>
-            <p><span class="headline">{{ $t('about.headWho') }}</span> {{ $t('about.who') }}</p>
-            <p><span class="headline">{{ $t('about.headNeedYou') }}</span> {{ $t('about.needYou') }}</p>
-            <p><span class="headline">{{ $t('about.headData') }}</span> {{ $t('about.data') }}</p>
-            <p><span class="headline">{{ $t('about.headDataUpdate') }}</span> {{ $t('about.dataUpdate') }}</p>
-            <p><span class="headline">{{ $t('about.headPublicData') }}</span> {{ $t('about.publicData') }}</p>
-            <p><span class="headline">{{ $t('about.headDataCare') }}</span> {{ $t('about.dataCare') }}</p>
-            <p><span class="headline">{{ $t('about.headImprovement') }}</span> {{ $t('about.improvement') }}</p>
+
+            <h3 class="text-white">{{ $t('about.headWho') }}</h3>
+            <p>{{ $t('about.who') }}</p>
+
+            <h3 class="text-white">{{ $t('about.headNeedYou') }}</h3>
+            <p>{{ $t('about.needYou') }}</p>
+
+            <h3 class="text-white">{{ $t('about.headData') }}</h3>
+            <p>{{ $t('about.data') }}</p>
+
+            <h3 class="text-white">{{ $t('about.headDataUpdate') }}</h3>
+            <p>{{ $t('about.dataUpdate') }}</p>
+
+            <h3 class="text-white">{{ $t('about.headPublicData') }}</h3>
+            <p>{{ $t('about.publicData') }}</p>
+
+            <h3 class="text-white">{{ $t('about.headDataCare') }}</h3>
+            <p>{{ $t('about.dataCare') }}</p>
+
+            <h3 class="text-white">{{ $t('about.headImprovement') }}</h3>
+            <p>{{ $t('about.improvement') }}</p>
           </div>
         </div>
       </section>
