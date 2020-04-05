@@ -1,27 +1,23 @@
 self.__precacheManifest = [
   {
-    "revision": "e5d52438ab52d163fafe",
-    "url": "/css/app.09224619.css"
+    "revision": "7487281bd8549bad023f",
+    "url": "/css/app.90fe58f6.css"
   },
   {
-    "revision": "e5d52438ab52d163fafe",
-    "url": "/js/app.b28702bb.js"
+    "revision": "7487281bd8549bad023f",
+    "url": "/js/app.4c85456b.js"
   },
   {
-    "revision": "b30106b25d99d7c8d072",
+    "revision": "3f432b497b6a8c1d43c6",
     "url": "/css/chunk-vendors.871da988.css"
   },
   {
-    "revision": "b30106b25d99d7c8d072",
-    "url": "/js/chunk-vendors.079971a4.js"
+    "revision": "3f432b497b6a8c1d43c6",
+    "url": "/js/chunk-vendors.2eafafae.js"
   },
   {
     "revision": "c1733565b32b585676302d4233c39da8",
     "url": "/fonts/nucleo-icons.c1733565.eot"
-  },
-  {
-    "revision": "f62bf1a0ac87b907d8f7a58ebce7fed4",
-    "url": "/img/nucleo-icons.f62bf1a0.svg"
   },
   {
     "revision": "426439788ec5ba772cdf94057f6f4659",
@@ -36,27 +32,31 @@ self.__precacheManifest = [
     "url": "/fonts/nucleo-icons.f82ec6ba.ttf"
   },
   {
-    "revision": "af7ae505a9eed503f8b8e6982036873e",
-    "url": "/fonts/fontawesome-webfont.af7ae505.woff2"
-  },
-  {
-    "revision": "fee66e712a8a08eef5805a46892932ad",
-    "url": "/fonts/fontawesome-webfont.fee66e71.woff"
+    "revision": "f62bf1a0ac87b907d8f7a58ebce7fed4",
+    "url": "/img/nucleo-icons.f62bf1a0.svg"
   },
   {
     "revision": "674f50d287a8c48dc19ba404d20fe713",
     "url": "/fonts/fontawesome-webfont.674f50d2.eot"
   },
   {
-    "revision": "4995e220570028a4a3d026062c93ccb8",
-    "url": "/img/fontawesome-webfont.4995e220.svg"
+    "revision": "fee66e712a8a08eef5805a46892932ad",
+    "url": "/fonts/fontawesome-webfont.fee66e71.woff"
   },
   {
     "revision": "b06871f281fee6b241d60582ae9369b9",
     "url": "/fonts/fontawesome-webfont.b06871f2.ttf"
   },
   {
-    "revision": "40cab3ce6212b3d153283dc82a409860",
+    "revision": "af7ae505a9eed503f8b8e6982036873e",
+    "url": "/fonts/fontawesome-webfont.af7ae505.woff2"
+  },
+  {
+    "revision": "4995e220570028a4a3d026062c93ccb8",
+    "url": "/img/fontawesome-webfont.4995e220.svg"
+  },
+  {
+    "revision": "4c5965f86de2a866e9241e532270144c",
     "url": "/index.html"
   },
   {
