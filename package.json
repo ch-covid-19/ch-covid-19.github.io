@@ -1,16 +1,12 @@
 {
   "name": "covid-self-report-org",
   "version": "1.0.0",
-  "author": {
-    "name": "Christian Müller",
-    "email": "muller.ch@gmail.com"
-  },
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "upload": "node ghpages.js"
+    "upload": "gh-pages -d dist -b master"
   },
   "dependencies": {
     "bootstrap-vue": "^2.0.4",
