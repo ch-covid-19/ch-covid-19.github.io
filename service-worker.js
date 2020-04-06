@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/precache-manifest.f117cec1e3b1014c05dcf16231a4979b.js"
+  "/precache-manifest.5a5b591c54f56ce58309ac7bb772f763.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "covid-self-report-org"});
