@@ -5,7 +5,7 @@ import AppFooter from "./layout/AppFooter";
 
 import About from "./views/About";
 import Press from "./views/Press";
-import Home from "./views/Home";
+import Home from "./pages/Home";
 import News from "./views/News";
 
 Vue.use(Router);

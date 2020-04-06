@@ -1,5 +1,5 @@
 <template>
-  <footer class="footer has-cards">
+  <footer class="footer">
     <div class="container">
       <div class="row row-grid align-items-center my-md">
         <div class="col-lg-6">

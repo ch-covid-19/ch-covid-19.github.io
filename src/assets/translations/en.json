@@ -5,6 +5,9 @@
             "ch": "Switzerland",
             "in": "India",
             "mx": "Mexico",
+            "mt": "Malta",
+            "pl": "Poland",
+            "se": "Sweeden",
             "it": "Italy"
         },
         "footer": {
@@ -20,7 +23,6 @@
         "title": "Home",
         "header": "Covid self report",
         "subheader": "The Open Source project that can help your country",
-        "countryListTitle": "List of the teams that have already joined the project",
         "alert": {
           "strong": "We are looking for new teams!",
           "text": "Feel free to joins us by creating your own team or join one our team. Just follow this "
@@ -40,6 +42,10 @@
     },
     "partnerships": {
         "title": "Partnerships"
+    },
+    "teams": {
+        "header": "Country teams",
+        "subheader": "List of the teams that have already joined the project"
     },
     "openData": {
         "header": "Open datasets",

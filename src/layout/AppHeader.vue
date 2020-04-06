@@ -24,21 +24,19 @@
         </li>
 
         <li class="nav-item">
-          <router-link class="nav-link" to="/news">
-            {{ $t('news.title') }}
-          </router-link>
+          <a href="#news" class="nav-link text-white">{{ $t('news.title') }}</a>
         </li>
 
         <li class="nav-item">
-          <router-link class="nav-link" to="/press">
-            {{ $t('press.title') }}
-          </router-link>
+          <a href="#partnerships" class="nav-link text-white">{{ $t('partnerships.title') }}</a>
         </li>
 
         <li class="nav-item">
-          <router-link class="nav-link" to="/about">
-            {{ $t('about.title') }}
-          </router-link>
+          <a href="#press" class="nav-link text-white">{{ $t('press.title') }}</a>
+        </li>
+
+        <li class="nav-item">
+          <a href="#about" class="nav-link text-white">{{ $t('about.title') }}</a>
         </li>
 
       </ul>
