@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "bea72c14ccb5274c0df4",
-    "url": "/css/app.9f073904.css"
+    "revision": "6c012cd5a492ddc18cc9",
+    "url": "/css/app.e331592e.css"
   },
   {
-    "revision": "bea72c14ccb5274c0df4",
-    "url": "/js/app.53a28195.js"
+    "revision": "6c012cd5a492ddc18cc9",
+    "url": "/js/app.9fa754dc.js"
   },
   {
     "revision": "d2a424fd09b9a80c51d9",
@@ -40,12 +40,12 @@ self.__precacheManifest = [
     "url": "/fonts/fontawesome-webfont.af7ae505.woff2"
   },
   {
-    "revision": "674f50d287a8c48dc19ba404d20fe713",
-    "url": "/fonts/fontawesome-webfont.674f50d2.eot"
-  },
-  {
     "revision": "fee66e712a8a08eef5805a46892932ad",
     "url": "/fonts/fontawesome-webfont.fee66e71.woff"
+  },
+  {
+    "revision": "674f50d287a8c48dc19ba404d20fe713",
+    "url": "/fonts/fontawesome-webfont.674f50d2.eot"
   },
   {
     "revision": "b06871f281fee6b241d60582ae9369b9",
@@ -56,16 +56,16 @@ self.__precacheManifest = [
     "url": "/img/fontawesome-webfont.4995e220.svg"
   },
   {
-    "revision": "82b39b76e8d1d6ca1153f297f606bc47",
+    "revision": "5cb3a3f4a4c6fb29d0e2fab5476ab10a",
     "url": "/index.html"
-  },
-  {
-    "revision": "064a17e2a5198d349d11e631650d92ed",
-    "url": "/img/brand/logo_alpha.png"
   },
   {
     "revision": "e84668e1f3e02a2ffef7987a7c75d10c",
     "url": "/img/brand/logo_blue_app.png"
+  },
+  {
+    "revision": "064a17e2a5198d349d11e631650d92ed",
+    "url": "/img/brand/logo_alpha.png"
   },
   {
     "revision": "a440eb31a022977353d0797b54c48a12",
@@ -82,6 +82,10 @@ self.__precacheManifest = [
   {
     "revision": "8b1a64df4cf428019119623de32597f0",
     "url": "/pdf/press/swiss_press_release_2avril.pdf"
+  },
+  {
+    "revision": "f93fc815357323b468e26bbcd821b5c4",
+    "url": "/pdf/press/swiss_20min.pdf"
   },
   {
     "revision": "396be9e6e98a546452dfc2b22d0a1c39",
